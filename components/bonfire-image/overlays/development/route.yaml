@@ -1,0 +1,22 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: bonfire-image
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: bonfire-image
+    app.kubernetes.io/part-of: bonfire-image
+  name: bonfire-imagea31y
+spec:
+  port:
+    targetPort: 8080
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: bonfire-image
+    weight: 100
+status: {}
