@@ -11,7 +11,7 @@ spec:
       creationTimestamp: null
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/gbenhaim-tenant/bonfire-image/bonfire-image@sha256:0c96a379d41cc308cef82e640f3b4609be3d4bc2c8248ef01acfa72d5ff7ff35
+      - image: quay.io/redhat-user-workloads/gbenhaim-tenant/bonfire-image/bonfire-image@sha256:3e9cb643ccfd3908fbfb0077289b3f13b4fb134f566992380c8ff11655bda413
         name: container-image
         resources: {}
 status: {}
